@@ -9,8 +9,18 @@ import SwiftUI
 
 struct ContentView: View {
     var body: some View {
-        Text("Hello, world!")
+        Text("Hello, World!")
+            .font(.custom("arial", size: 25))
             .padding()
+            .background(Color.green)
+            .cornerRadius(10)
+            .foregroundColor(Color.white)
+            .overlay(
+                RoundedRectangle(cornerRadius: 10)
+                    .stroke(Color.blue, lineWidth: 10)
+            )
+            
+        
     }
 }
 
