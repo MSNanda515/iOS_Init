@@ -3,4 +3,4 @@ This repository contains the various projects I developed while getting started 
 
 It contains the following iOS applications:
 - HelloWorld: A template application meant as a playground for learning various UI components. 
-- War_CardGame: An iOS application simulating a card game. I learnt the use of the various stack containers, Images, Spacers, and Text elements.
+- War_CardGame: An iOS application simulating a card game. I learnt the use of the various stack containers, Images, Spacers, and Text elements while working on this.
