@@ -50,6 +50,25 @@ struct ContentView: View {
                 
             }
             Spacer()
+            // The thing like the arrow function is called closure
+            Button("But1", action: {
+                print("Button 1")
+            })
+            // Button view with trailing closure
+            Button("But2") {
+                print("Button 2")
+            }
+            // Button instance with label image
+            Button(action: {
+                print("Button 3")
+            }, label: {
+                HStack {
+                    // Uses the SF images already available in Xcode
+                    Image(systemName: "pencil")
+                    Text("Button3")
+                }
+                
+            })
         }
         
     }
