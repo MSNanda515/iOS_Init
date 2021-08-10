@@ -93,3 +93,9 @@ struct BillSplitter {
 }
 
 print(BillSplitter().splitBill(subTotal: 120, people: 5))
+
+
+// && and, || or,
+if true {
+    print("True executed")
+}
