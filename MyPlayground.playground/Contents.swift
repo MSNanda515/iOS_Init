@@ -65,10 +65,31 @@ struct ChatView {
 struct Car {
     private var make = "Honda", model = "Civic", year = "2010"
     private var details:String {
-        return year + make + model
+        return year + " " + make + " " + model
     }
     
     public func getDetails() -> String {
         return details
     }
 }
+
+var newCar = Car()
+print(newCar.getDetails())
+
+
+struct TaxCalculator {
+    private var tax = 1.5
+    
+    public func totalWithTax(_ bill:Double) ->Double {
+        return bill * tax
+    }
+}
+
+struct BillSplitter {
+    public func splitBill(subTotal:Double, people:Int) -> Double {
+        let personShare = TaxCalculator().totalWithTax(subTotal) / Double(people)
+        return personShare
+    }
+}
+
+print(BillSplitter().splitBill(subTotal: 120, people: 5))
