@@ -99,3 +99,19 @@ print(BillSplitter().splitBill(subTotal: 120, people: 5))
 if true {
     print("True executed")
 }
+
+var myNum:Int = 10
+var myArray:[Int] = [Int]()
+
+myArray.append(10)
+myArray.append(100)
+myArray.append(1000)
+myArray[0] = 1
+myArray.remove(at: 1)
+myArray.insert(4, at: 1)
+myArray.contains(4)
+myArray.firstIndex(of: 100) // Returns Null if DNE
+myArray.lastIndex(of: 100)
+print(myArray)
+print(myArray.count)
+
