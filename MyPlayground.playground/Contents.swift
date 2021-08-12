@@ -133,3 +133,21 @@ while counter > 0 {
     counter -= 1
 }
 
+// Classes
+class Person {
+    private var name = ""
+    public func talk () {
+        print("make conversation")
+    }
+}
+// Subclassing
+final class Comedian: Person {
+    override func talk() {
+        print("Make people laugh")
+        super.talk()
+    }
+}
+// Final prevents it from being inherited
+var c = Comedian()
+c.talk()
+
