@@ -9,20 +9,42 @@ import SwiftUI
 
 struct ContentView: View {
     
-    var items = ["Ele 1", "Ele 2", "Ele 3"]
+    @State var items:[Int] = []
     
     var body: some View {
-//        Learning Navigation
-        NavigationView {
-            List(items, id: \.self) { item in
-                NavigationLink(
-                    destination: Text("Destination"),
-                    label: {
-                        Text(item)
-                    })
+        
+        VStack {
+            List(items, id: \.self) {item in
+                Text(String(item))
             }
-            .navigationTitle(Text("MY LIST"))
+            Button("Add to List", action: {
+                var randInt:Int
+                repeat {
+                    randInt = Int.random(in: 1...7)
+                    items.append(randInt)
+                } while randInt != 7
+            })
+            Button("Increment List") {
+                for index in 0...items.count-1 {
+                    items[index] += 1
+                }
+            }
+            Button("Clear") {
+                items = []
+            }
         }
+        
+//        Learning Navigation
+//        NavigationView {
+//            List(items, id: \.self) { item in
+//                NavigationLink(
+//                    destination: Text("Destination"),
+//                    label: {
+//                        Text(item)
+//                    })
+//            }
+//            .navigationTitle(Text("MY LIST"))
+//        }
                    
         // Basic Concepts
 //        VStack {

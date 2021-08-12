@@ -115,3 +115,21 @@ myArray.lastIndex(of: 100)
 print(myArray)
 print(myArray.count)
 
+// For in loop
+var ar = [1, 5, 10]
+for index in 1...ar.count-1{
+    ar[index]
+}
+for el in ar {
+    el
+}
+var counter = 0
+//Repeat while
+repeat {
+    counter -= 1
+} while counter > 0
+//While
+while counter > 0 {
+    counter -= 1
+}
+
