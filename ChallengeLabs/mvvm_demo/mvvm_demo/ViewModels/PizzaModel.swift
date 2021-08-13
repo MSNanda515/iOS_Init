@@ -7,12 +7,18 @@
 
 import Foundation
 
-class PizzaModel {
-    var pizzas = [Pizza]()
+class PizzaModel: ObservableObject {
+    @Published var pizzas = [Pizza]()
     
     init() {
         pizzas.append(Pizza(name: "Indo", topping1: "Onion", topping2: "Tomato", topping3: "Carrot"))
         pizzas.append(Pizza(name: "Indo", topping1: "Onion", topping2: "Tomato", topping3: "Carrot"))
         pizzas.append(Pizza(name: "Indo", topping1: "Onion", topping2: "Tomato", topping3: "Carrot"))
+    }
+    
+    func changeTopping() {
+        for index in 0...pizzas.count-1 {
+            pizzas[index].topping1 = "Pineapple"
+        }
     }
 }

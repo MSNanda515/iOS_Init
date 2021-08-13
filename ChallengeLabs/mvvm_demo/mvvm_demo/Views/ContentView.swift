@@ -8,32 +8,44 @@
 import SwiftUI
 
 struct ContentView: View {
-//    var model = RecipeModel()
+//    @ObservedObject var model = RecipeModel()
 //
 //    var body: some View {
-//        List(model.recipes) { r in
-//            VStack(alignment: .leading) {
-//                Text(r.name)
-//                    .font(/*@START_MENU_TOKEN@*/.title/*@END_MENU_TOKEN@*/)
-//                Text(r.cuisine)
+//
+//        VStack {
+//            List(model.recipes) { r in
+//                VStack(alignment: .leading) {
+//                    Text(r.name)
+//                        .font(/*@START_MENU_TOKEN@*/.title/*@END_MENU_TOKEN@*/)
+//                    Text(r.cuisine)
+//                }
+//            }
+//            Button("Add Item") {
+//                model.addRecipe()
 //            }
 //        }
 //    }
     
-    var model = PizzaModel()
-    
+    @ObservedObject var model = PizzaModel()
+
     var body: some View {
-        List(model.pizzas) {pizza in
-            VStack(alignment: .leading) {
-                Text(pizza.name)
-                HStack {
-                    Text(pizza.topping1)
-                    Text(pizza.topping2)
-                    Text(pizza.topping3)
-                    
+        VStack {
+            List(model.pizzas) {pizza in
+                VStack(alignment: .leading) {
+                    Text(pizza.name)
+                    HStack {
+                        Text(pizza.topping1)
+                        Text(pizza.topping2)
+                        Text(pizza.topping3)
+
+                    }
                 }
             }
+            Button("Change") {
+                model.changeTopping()
+            }
         }
+        
     }
 }
 
