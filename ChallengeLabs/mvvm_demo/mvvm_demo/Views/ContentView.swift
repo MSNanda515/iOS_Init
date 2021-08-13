@@ -25,27 +25,48 @@ struct ContentView: View {
 //            }
 //        }
 //    }
-    
-    @ObservedObject var model = PizzaModel()
-
+//
+//    @ObservedObject var model = PizzaModel()
+//
+//    var body: some View {
+//        VStack {
+//            List(model.pizzas) {pizza in
+//                VStack(alignment: .leading) {
+//                    Text(pizza.name)
+//                    HStack {
+//                        Text(pizza.topping1)
+//                        Text(pizza.topping2)
+//                        Text(pizza.topping3)
+//
+//                    }
+//                }
+//            }
+//            Button("Change") {
+//                model.changeTopping()
+//            }
+//        }
+//
+//    }
+    @State var listStr:[String]? = nil
     var body: some View {
         VStack {
-            List(model.pizzas) {pizza in
-                VStack(alignment: .leading) {
-                    Text(pizza.name)
-                    HStack {
-                        Text(pizza.topping1)
-                        Text(pizza.topping2)
-                        Text(pizza.topping3)
-
-                    }
+            HStack {
+                Button("Clear") {
+                    listStr = nil
+                }
+                Button("Add") {
+                    listStr = ["Kvell", "Callow", "nimrod"]
                 }
             }
-            Button("Change") {
-                model.changeTopping()
+            if listStr == nil {
+                Text("Press add")
+            }
+            else {
+                List(listStr!, id: \.self) {item in
+                    Text(item)
+                }
             }
         }
-        
     }
 }
 
