@@ -151,3 +151,25 @@ final class Comedian: Person {
 var c = Comedian()
 c.talk()
 
+
+//Nils, Optionals
+
+var a = 1
+var b:Int!
+if b != nil {
+    1 + b // This will crash the app
+}
+
+// Implicitly unwrapped Optional
+// Xcode warns us Need to unwrap to get value
+var impUnr:Int? = nil
+if impUnr != nil {
+    1 + impUnr!
+}
+// Optional Binding
+if let optionalBinding = impUnr {
+    1 + optionalBinding
+}
+var personWrapped:Person? = nil
+personWrapped?.talk()  // Optional Chaining
+
