@@ -173,3 +173,19 @@ if let optionalBinding = impUnr {
 var personWrapped:Person? = nil
 personWrapped?.talk()  // Optional Chaining
 
+// Dictionary
+var dict:[Int: Int] = [Int:Int]()
+dict[1] = 1 // Adding a key value pair
+//print(dict[1]) // Returns the value as an optional
+//print(dict[0]) // returns nil
+dict[1] = 5
+dict[1] = nil // Removes the key-value pair
+// Can have Any type as the value
+var declaredDic = [1: 1, 2: 2]
+// Iterating through a dictionary
+//for kvp in declaredDic {
+//    // kvp is tuple
+//    print("Key is " + String(kvp.key))
+//    print("Value is " + String(kvp.value))
+//}
+//for (key, value) in declaredDic Does the same work

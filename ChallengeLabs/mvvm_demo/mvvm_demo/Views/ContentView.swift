@@ -26,48 +26,28 @@ struct ContentView: View {
 //        }
 //    }
 //
-//    @ObservedObject var model = PizzaModel()
-//
-//    var body: some View {
-//        VStack {
-//            List(model.pizzas) {pizza in
-//                VStack(alignment: .leading) {
-//                    Text(pizza.name)
-//                    HStack {
-//                        Text(pizza.topping1)
-//                        Text(pizza.topping2)
-//                        Text(pizza.topping3)
-//
-//                    }
-//                }
-//            }
-//            Button("Change") {
-//                model.changeTopping()
-//            }
-//        }
-//
-//    }
-    @State var listStr:[String]? = nil
+    @ObservedObject var model = PizzaModel()
+
     var body: some View {
         VStack {
-            HStack {
-                Button("Clear") {
-                    listStr = nil
-                }
-                Button("Add") {
-                    listStr = ["Kvell", "Callow", "nimrod"]
+            List(model.pizzas) {pizza in
+                VStack(alignment: .leading) {
+                    Text(pizza.name)
+                    HStack {
+                        Text(pizza.topping1)
+                        Text(pizza.topping2)
+                        Text(pizza.topping3)
+
+                    }
                 }
             }
-            if listStr == nil {
-                Text("Press add")
-            }
-            else {
-                List(listStr!, id: \.self) {item in
-                    Text(item)
-                }
+            Button("Change") {
+                model.changeTopping()
             }
         }
+
     }
+    
 }
 
 struct ContentView_Previews: PreviewProvider {
