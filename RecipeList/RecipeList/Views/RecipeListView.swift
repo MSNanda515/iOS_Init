@@ -8,9 +8,21 @@
 import SwiftUI
 
 struct RecipeListView: View {
+    // Reference the view model
+    @ObservedObject var model = RecipeModel()
+    
     var body: some View {
-        Text("Hello, world!")
-            .padding()
+        List(model.recipes) {r in
+            HStack(spacing: 17.25) {
+                Image(r.image)
+                    .resizable()
+                    .scaledToFill()
+                    .frame(width: 50, height: 50, alignment: /*@START_MENU_TOKEN@*/.center/*@END_MENU_TOKEN@*/)
+                    .clipped()
+                    .cornerRadius(5)
+                Text(r.name)
+            }
+        }
     }
 }
 
