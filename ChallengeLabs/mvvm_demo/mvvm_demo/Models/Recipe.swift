@@ -7,8 +7,8 @@
 
 import Foundation
 
-struct Recipe: Identifiable{
-    var id = UUID()
+class Recipe: Identifiable, Decodable{
+    var id:UUID? // The json might not contain the ID property
     var name = ""
     var cuisine = ""
 }
