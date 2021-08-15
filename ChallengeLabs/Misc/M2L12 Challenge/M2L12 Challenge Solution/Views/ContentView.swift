@@ -28,9 +28,9 @@ struct ContentView: View {
                     HStack {
                         // In lesson 14, you'll learn how to dynamically generate Text elements from an array.
                         // For now, let's hardcode 3 toppings and make sure the JSON file has 3 toppings for each pizza
-                        Text(pizza.toppings[0])
-                        Text(pizza.toppings[1])
-                        Text(pizza.toppings[2])
+                        ForEach(pizza.toppings, id: \.self) {t in
+                            Text(t)
+                        }
                     }
                     .font(.caption)
                     
