@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		81B24A1A26CABD860087543B /* PizzaView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 81B24A1926CABD860087543B /* PizzaView.swift */; };
 		839B4B3725B7754100B2EEDC /* M2L12_Challenge_SolutionApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 839B4B3625B7754100B2EEDC /* M2L12_Challenge_SolutionApp.swift */; };
 		839B4B3925B7754100B2EEDC /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 839B4B3825B7754100B2EEDC /* ContentView.swift */; };
 		839B4B3B25B7754400B2EEDC /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 839B4B3A25B7754400B2EEDC /* Assets.xcassets */; };
@@ -17,6 +18,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		81B24A1926CABD860087543B /* PizzaView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PizzaView.swift; sourceTree = "<group>"; };
 		839B4B3325B7754100B2EEDC /* M2L12 Challenge Solution.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "M2L12 Challenge Solution.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		839B4B3625B7754100B2EEDC /* M2L12_Challenge_SolutionApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = M2L12_Challenge_SolutionApp.swift; sourceTree = "<group>"; };
 		839B4B3825B7754100B2EEDC /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -90,6 +92,7 @@
 			isa = PBXGroup;
 			children = (
 				839B4B3825B7754100B2EEDC /* ContentView.swift */,
+				81B24A1926CABD860087543B /* PizzaView.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -182,6 +185,7 @@
 			files = (
 				839B4B3925B7754100B2EEDC /* ContentView.swift in Sources */,
 				839B4B3725B7754100B2EEDC /* M2L12_Challenge_SolutionApp.swift in Sources */,
+				81B24A1A26CABD860087543B /* PizzaView.swift in Sources */,
 				839B4B5525B775A700B2EEDC /* PizzaModel.swift in Sources */,
 				839B4B4E25B7756D00B2EEDC /* Pizza.swift in Sources */,
 			);
