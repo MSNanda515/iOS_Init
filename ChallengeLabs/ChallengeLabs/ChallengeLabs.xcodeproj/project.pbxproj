@@ -19,6 +19,7 @@
 		81DFE88A26D0175800716EDD /* PeopleListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 81DFE88926D0175800716EDD /* PeopleListView.swift */; };
 		81DFE88E26D0481300716EDD /* ColorfulCardsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 81DFE88D26D0481300716EDD /* ColorfulCardsView.swift */; };
 		81DFE89026D04B4400716EDD /* ColorCardsTabView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 81DFE88F26D04B4400716EDD /* ColorCardsTabView.swift */; };
+		81DFE89326D0632A00716EDD /* IncreasingHeightBoxView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 81DFE89226D0632A00716EDD /* IncreasingHeightBoxView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -36,6 +37,7 @@
 		81DFE88926D0175800716EDD /* PeopleListView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PeopleListView.swift; sourceTree = "<group>"; };
 		81DFE88D26D0481300716EDD /* ColorfulCardsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ColorfulCardsView.swift; sourceTree = "<group>"; };
 		81DFE88F26D04B4400716EDD /* ColorCardsTabView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ColorCardsTabView.swift; sourceTree = "<group>"; };
+		81DFE89226D0632A00716EDD /* IncreasingHeightBoxView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IncreasingHeightBoxView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -68,6 +70,7 @@
 		81DFE86626D010C900716EDD /* ChallengeLabs */ = {
 			isa = PBXGroup;
 			children = (
+				81DFE89126D062FE00716EDD /* IncreasingHeightBoxes */,
 				81DFE86726D010C900716EDD /* ChallengeLabsApp.swift */,
 				81DFE88B26D047E000716EDD /* ChangingColorCards */,
 				81DFE88426D0169300716EDD /* PeopleList */,
@@ -149,6 +152,14 @@
 			path = Views;
 			sourceTree = "<group>";
 		};
+		81DFE89126D062FE00716EDD /* IncreasingHeightBoxes */ = {
+			isa = PBXGroup;
+			children = (
+				81DFE89226D0632A00716EDD /* IncreasingHeightBoxView.swift */,
+			);
+			path = IncreasingHeightBoxes;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -226,6 +237,7 @@
 				81DFE88126D0133E00716EDD /* Util.swift in Sources */,
 				81DFE86A26D010C900716EDD /* ContentView.swift in Sources */,
 				81DFE86826D010C900716EDD /* ChallengeLabsApp.swift in Sources */,
+				81DFE89326D0632A00716EDD /* IncreasingHeightBoxView.swift in Sources */,
 				81DFE88826D016ED00716EDD /* PreferenceView.swift in Sources */,
 				81DFE88E26D0481300716EDD /* ColorfulCardsView.swift in Sources */,
 			);
