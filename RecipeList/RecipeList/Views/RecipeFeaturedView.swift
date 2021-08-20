@@ -20,3 +20,4 @@ struct RecipeFeaturedView_Previews: PreviewProvider {
         RecipeFeaturedView()
     }
 }
+ 
