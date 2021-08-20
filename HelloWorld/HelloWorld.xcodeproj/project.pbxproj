@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		815A776926CF2277007CE447 /* TabViewsM4C3.swift in Sources */ = {isa = PBXBuildFile; fileRef = 815A776826CF2277007CE447 /* TabViewsM4C3.swift */; };
 		81BCD5B826BF5503006C82EE /* HelloWorldApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 81BCD5B726BF5503006C82EE /* HelloWorldApp.swift */; };
 		81BCD5BA26BF5503006C82EE /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 81BCD5B926BF5503006C82EE /* ContentView.swift */; };
 		81BCD5BC26BF5504006C82EE /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 81BCD5BB26BF5504006C82EE /* Assets.xcassets */; };
@@ -14,6 +15,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		815A776826CF2277007CE447 /* TabViewsM4C3.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TabViewsM4C3.swift; sourceTree = "<group>"; };
 		81BCD5B426BF5503006C82EE /* HelloWorld.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = HelloWorld.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		81BCD5B726BF5503006C82EE /* HelloWorldApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HelloWorldApp.swift; sourceTree = "<group>"; };
 		81BCD5B926BF5503006C82EE /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -33,6 +35,14 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		815A776726CF2254007CE447 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				815A776826CF2277007CE447 /* TabViewsM4C3.swift */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
 		81BCD5AB26BF5503006C82EE = {
 			isa = PBXGroup;
 			children = (
@@ -53,6 +63,7 @@
 			isa = PBXGroup;
 			children = (
 				81BCD5B726BF5503006C82EE /* HelloWorldApp.swift */,
+				815A776726CF2254007CE447 /* Views */,
 				81BCD5B926BF5503006C82EE /* ContentView.swift */,
 				81BCD5BB26BF5504006C82EE /* Assets.xcassets */,
 				81BCD5C026BF5504006C82EE /* Info.plist */,
@@ -140,6 +151,7 @@
 			files = (
 				81BCD5BA26BF5503006C82EE /* ContentView.swift in Sources */,
 				81BCD5B826BF5503006C82EE /* HelloWorldApp.swift in Sources */,
+				815A776926CF2277007CE447 /* TabViewsM4C3.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
