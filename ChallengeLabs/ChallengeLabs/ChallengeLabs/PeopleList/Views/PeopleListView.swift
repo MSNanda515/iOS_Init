@@ -14,7 +14,24 @@ struct PeopleListView: View {
             Text("People")
                 .font(/*@START_MENU_TOKEN@*/.title/*@END_MENU_TOKEN@*/)
             List(model.people) {p in
-                Text(p.name)
+                
+                VStack(alignment: .leading) {
+                    if (model.nameActive) {
+                        Text("Name: " + p.name)
+                    }
+                    if (model.addressActive) {
+                        Text("Address: " + p.address)
+                    }
+                    if (model.companyActive) {
+                        Text("Company: " + p.company)
+                    }
+                    if (model.expActive) {
+                        Text("Years of Experience: " + String(p.yearsOfExperience))
+                    }
+                }
+                .padding(.leading)
+                
+                
             }
         }
     }
