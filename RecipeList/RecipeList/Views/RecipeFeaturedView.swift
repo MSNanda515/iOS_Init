@@ -43,6 +43,7 @@ struct RecipeFeaturedView: View {
                         }
                     }
                 }
+                // This makes the tab strle as Page tab
                 .tabViewStyle(PageTabViewStyle(indexDisplayMode: .automatic))
                 .indexViewStyle(PageIndexViewStyle(backgroundDisplayMode: .always))
             }

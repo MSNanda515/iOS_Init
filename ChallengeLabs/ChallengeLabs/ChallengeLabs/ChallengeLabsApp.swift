@@ -11,7 +11,7 @@ import SwiftUI
 struct ChallengeLabsApp: App {
     var body: some Scene {
         WindowGroup {
-            PeopleTabView()
+            ColorCardsTabView()
         }
     }
 }

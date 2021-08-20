@@ -17,6 +17,8 @@
 		81DFE88326D015BD00716EDD /* PersonModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 81DFE88226D015BD00716EDD /* PersonModel.swift */; };
 		81DFE88826D016ED00716EDD /* PreferenceView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 81DFE88726D016ED00716EDD /* PreferenceView.swift */; };
 		81DFE88A26D0175800716EDD /* PeopleListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 81DFE88926D0175800716EDD /* PeopleListView.swift */; };
+		81DFE88E26D0481300716EDD /* ColorfulCardsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 81DFE88D26D0481300716EDD /* ColorfulCardsView.swift */; };
+		81DFE89026D04B4400716EDD /* ColorCardsTabView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 81DFE88F26D04B4400716EDD /* ColorCardsTabView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -32,6 +34,8 @@
 		81DFE88226D015BD00716EDD /* PersonModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PersonModel.swift; sourceTree = "<group>"; };
 		81DFE88726D016ED00716EDD /* PreferenceView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PreferenceView.swift; sourceTree = "<group>"; };
 		81DFE88926D0175800716EDD /* PeopleListView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PeopleListView.swift; sourceTree = "<group>"; };
+		81DFE88D26D0481300716EDD /* ColorfulCardsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ColorfulCardsView.swift; sourceTree = "<group>"; };
+		81DFE88F26D04B4400716EDD /* ColorCardsTabView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ColorCardsTabView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -65,6 +69,7 @@
 			isa = PBXGroup;
 			children = (
 				81DFE86726D010C900716EDD /* ChallengeLabsApp.swift */,
+				81DFE88B26D047E000716EDD /* ChangingColorCards */,
 				81DFE88426D0169300716EDD /* PeopleList */,
 				81DFE86B26D010CA00716EDD /* Assets.xcassets */,
 				81DFE87026D010CA00716EDD /* Info.plist */,
@@ -125,6 +130,23 @@
 				81DFE87826D010DD00716EDD /* ViewModels */,
 			);
 			path = PeopleList;
+			sourceTree = "<group>";
+		};
+		81DFE88B26D047E000716EDD /* ChangingColorCards */ = {
+			isa = PBXGroup;
+			children = (
+				81DFE88C26D047EC00716EDD /* Views */,
+			);
+			path = ChangingColorCards;
+			sourceTree = "<group>";
+		};
+		81DFE88C26D047EC00716EDD /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				81DFE88D26D0481300716EDD /* ColorfulCardsView.swift */,
+				81DFE88F26D04B4400716EDD /* ColorCardsTabView.swift */,
+			);
+			path = Views;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -196,6 +218,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				81DFE89026D04B4400716EDD /* ColorCardsTabView.swift in Sources */,
 				81DFE88326D015BD00716EDD /* PersonModel.swift in Sources */,
 				81DFE87D26D011D700716EDD /* Person.swift in Sources */,
 				81DFE87F26D012CF00716EDD /* PeopleTabView.swift in Sources */,
@@ -204,6 +227,7 @@
 				81DFE86A26D010C900716EDD /* ContentView.swift in Sources */,
 				81DFE86826D010C900716EDD /* ChallengeLabsApp.swift in Sources */,
 				81DFE88826D016ED00716EDD /* PreferenceView.swift in Sources */,
+				81DFE88E26D0481300716EDD /* ColorfulCardsView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
