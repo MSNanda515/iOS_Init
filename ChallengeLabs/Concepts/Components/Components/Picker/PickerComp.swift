@@ -16,7 +16,7 @@ struct PickerComp: View {
                 Text("Option 1").tag(1)
                 Text("Option 2").tag(2)
                 Text("Option 3").tag(3)
-            }
+            
             // Use menu style to have a menu
             // .pickerStyle(MenuPickerStyle())
             .pickerStyle(SegmentedPickerStyle())

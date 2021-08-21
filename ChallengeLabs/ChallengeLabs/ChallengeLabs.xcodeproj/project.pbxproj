@@ -20,6 +20,7 @@
 		81DFE88E26D0481300716EDD /* ColorfulCardsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 81DFE88D26D0481300716EDD /* ColorfulCardsView.swift */; };
 		81DFE89026D04B4400716EDD /* ColorCardsTabView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 81DFE88F26D04B4400716EDD /* ColorCardsTabView.swift */; };
 		81DFE89326D0632A00716EDD /* IncreasingHeightBoxView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 81DFE89226D0632A00716EDD /* IncreasingHeightBoxView.swift */; };
+		81DFE8B426D14BAC00716EDD /* RestaurantMenuView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 81DFE8B326D14BAC00716EDD /* RestaurantMenuView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -38,6 +39,7 @@
 		81DFE88D26D0481300716EDD /* ColorfulCardsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ColorfulCardsView.swift; sourceTree = "<group>"; };
 		81DFE88F26D04B4400716EDD /* ColorCardsTabView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ColorCardsTabView.swift; sourceTree = "<group>"; };
 		81DFE89226D0632A00716EDD /* IncreasingHeightBoxView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IncreasingHeightBoxView.swift; sourceTree = "<group>"; };
+		81DFE8B326D14BAC00716EDD /* RestaurantMenuView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RestaurantMenuView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -70,8 +72,9 @@
 		81DFE86626D010C900716EDD /* ChallengeLabs */ = {
 			isa = PBXGroup;
 			children = (
-				81DFE89126D062FE00716EDD /* IncreasingHeightBoxes */,
+				81DFE8B226D14B9700716EDD /* RestaurantMenu */,
 				81DFE86726D010C900716EDD /* ChallengeLabsApp.swift */,
+				81DFE89126D062FE00716EDD /* IncreasingHeightBoxes */,
 				81DFE88B26D047E000716EDD /* ChangingColorCards */,
 				81DFE88426D0169300716EDD /* PeopleList */,
 				81DFE86B26D010CA00716EDD /* Assets.xcassets */,
@@ -160,6 +163,14 @@
 			path = IncreasingHeightBoxes;
 			sourceTree = "<group>";
 		};
+		81DFE8B226D14B9700716EDD /* RestaurantMenu */ = {
+			isa = PBXGroup;
+			children = (
+				81DFE8B326D14BAC00716EDD /* RestaurantMenuView.swift */,
+			);
+			path = RestaurantMenu;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -229,6 +240,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				81DFE8B426D14BAC00716EDD /* RestaurantMenuView.swift in Sources */,
 				81DFE89026D04B4400716EDD /* ColorCardsTabView.swift in Sources */,
 				81DFE88326D015BD00716EDD /* PersonModel.swift in Sources */,
 				81DFE87D26D011D700716EDD /* Person.swift in Sources */,
