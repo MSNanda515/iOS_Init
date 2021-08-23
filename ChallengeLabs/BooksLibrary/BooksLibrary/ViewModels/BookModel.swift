@@ -7,6 +7,6 @@
 
 import Foundation
 
-class BookModel: ObservableObject {
-    
-}
+//class BookModel: ObservableObject {
+//    var books:[Book]
+//}
