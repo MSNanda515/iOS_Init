@@ -9,7 +9,7 @@ import SwiftUI
 
 struct RecipeDetailView: View {
     var recipe:Recipe
-    
+    @State var selectedServingSize = 2
     var body: some View {
         ScrollView {
             VStack(alignment: .leading) {
@@ -17,15 +17,36 @@ struct RecipeDetailView: View {
                 Image(recipe.image)
                     .resizable()
                     .scaledToFill()
-               
+               // MARK: Recipe Title
+                Text(recipe.name)
+                    .bold()
+                    .font(Font.custom("Avenir Heavy", size: 24))
+                    .padding(.top, 20)
+                    .padding(.leading)
+                    .padding(.leading )
+                
+                // MARK: Portion Picker
+                VStack {
+                    Text("Select your serving size:")
+                    Picker("", selection: $selectedServingSize) {
+                        Text("2").tag(2)
+                        Text("4").tag(4)
+                        Text("6").tag(6)
+                        Text("8").tag(8)
+                    }
+                    .pickerStyle(SegmentedPickerStyle())
+                    .frame(width: 200)
+                }
+                .padding()
+                
                 // MARK: Ingredients
                 VStack(alignment: .leading) {
                     Text("Ingredients")
-                        .font(.headline)
+                        .font(Font.custom("Avenir Heavy", size: 16))
                         .padding(.vertical, 5)
                     
                     ForEach(recipe.ingredients) {item in
-                        Text("- " + item.name)
+                        Text("- " + RecipeModel.getPortion(ingredients: item, recipeServing: recipe.servings, targetServing: selectedServingSize) + " " + item.name.lowercased())
                         
                     }
                 }
@@ -36,7 +57,7 @@ struct RecipeDetailView: View {
                 // MARK: Directions
                 VStack(alignment: .leading) {
                     Text("Directions")
-                        .font(.headline)
+                        .font(Font.custom("Avenir Heavy", size: 16))
                         .padding(.vertical, 5)
                     ForEach(0..<recipe.directions.count, id: \.self) { i in
                         Text("\(i+1): " + recipe.directions[i])
@@ -48,7 +69,7 @@ struct RecipeDetailView: View {
             }
             
         }
-        .navigationTitle(recipe.name)
+      
     }
 }
 

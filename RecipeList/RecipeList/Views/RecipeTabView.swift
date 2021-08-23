@@ -26,6 +26,7 @@ struct RecipeTabView: View {
                 }
         }
         .environmentObject(RecipeModel())
+        .font(Font.custom("Avenir", size: 15))
     }
 }
 
