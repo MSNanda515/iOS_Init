@@ -7,6 +7,9 @@
 
 import Foundation
 
-//class BookModel: ObservableObject {
-//    var books:[Book]
-//}
+class BookModel: ObservableObject {
+    @Published var books:[Book]
+    init() {
+        books = DataService.parseJsonData()
+    }
+}
